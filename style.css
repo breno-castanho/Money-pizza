@@ -1,10 +1,40 @@
 .container {
-    display: flex; /* Alinha os gráficos lado a lado */
-    justify-content: space-around; /* Espaçamento igual entre os gráficos */
-    margin: 20px; /* Espaçamento em volta do container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-canvas {
-    width: 300px !important; /* Largura do gráfico */
-    height: 300px !important; /* Altura do gráfico */
+.charts {
+    display: flex;
+    justify-content: center; /* Centraliza os gráficos horizontalmente */
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.chart-container {
+    width: 400px; /* Define uma largura fixa para os gráficos */
+    margin: 0 10px; /* Espaço entre os gráficos */
+}
+
+.form-container {
+    margin-top: 40px; /* Aumenta o espaço acima da seção de transações */
+    text-align: center;
+}
+
+table {
+    width: 40%; /* Tabela um pouco mais estreita */
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: auto; /* Para alinhar à direita */
+    margin-right: auto; /* Para alinhar à direita */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
 }

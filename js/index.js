@@ -3,17 +3,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
     let pieChart1, pieChart2;
 
     // Inicializa o Cleave.js no campo de valor
-    new Cleave('#precoGasto', {
-        numeral: true,
-        numeralThousandsGroupStyle: 'thousand',
-        prefix: 'R$ ',
-        numeralDecimalMark: ',',
-        delimiter: '.',
-        numeralDecimalScale: 2,
-        onValueChanged: function (e) {
-            document.getElementById('precoGasto').value = e.formattedValue;
-        }
-    });
+    // new Cleave('#precoGasto', {
+    //     numeral: true,
+    //     numeralThousandsGroupStyle: 'thousand',
+    //     prefix: 'R$ ',
+    //     numeralDecimalMark: ',',
+    //     delimiter: '.',
+    //     numeralDecimalScale: 2,
+    //     onValueChanged: function (e) {
+    //         document.getElementById('precoGasto').value = e.formattedValue;
+    //     }
+    // });
 
     const labels = ['Transporte', 'Alimentação', 'Economias', 'Gastos Fixos', 'Atividades e Bem Estar', 'Livre'];
     const backgroundColors = [

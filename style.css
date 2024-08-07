@@ -1,0 +1,10 @@
+.container {
+    display: flex; /* Alinha os gráficos lado a lado */
+    justify-content: space-around; /* Espaçamento igual entre os gráficos */
+    margin: 20px; /* Espaçamento em volta do container */
+}
+
+canvas {
+    width: 300px !important; /* Largura do gráfico */
+    height: 300px !important; /* Altura do gráfico */
+}
